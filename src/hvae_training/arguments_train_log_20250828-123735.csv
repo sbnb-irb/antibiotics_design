@@ -1,0 +1,33 @@
+smiles_file,'/data/hvae_training/chembl_and_all_cc_train_valid_smiles.txt'
+vocab,<hgraph.vocab.PairVocab object at 0x1495a14ac740>
+atom_vocab,<hgraph.vocab.Vocab object at 0x1495a12c8dd0>
+save_dir,''
+trained_model,''
+seed,42
+model_config,'/data/hvae_training/hvae_config.json'
+rnn_type,'LSTM'
+hidden_size,250
+embed_size,250
+batch_size,128
+latent_size,32
+depthT,15
+depthG,15
+diterT,1
+diterG,3
+dropout,0.0
+lr,0.001
+clip_norm,5.0
+epochs,6
+nsample,-1
+print_iter,10
+save_total_steps,5000
+log_name,'train_log'
+cpus,2
+save_at_end,1
+print_inner_iter,10
+loss_increase_tolerance,50
+save_best_loss,1
+best_loss,np.float64(0.4348790556192398)
+smiles_are_safe,1
+only_get_safe_smiles,0
+save_safe_smiles_file,'safe_smiles.csv'
