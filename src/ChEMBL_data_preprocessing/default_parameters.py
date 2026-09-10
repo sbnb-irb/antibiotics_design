@@ -1,0 +1,42 @@
+import os
+
+abspath = os.path.dirname(os.path.abspath(__file__))
+
+# Database defaults
+DATABASE_NAME = "chembl_33"
+CHEMBL_USR = "your_user"
+CHEMBL_PWD = "your_password"
+
+# Path defaults
+DATAPATH = os.path.join(abspath, "..", "data")
+TMPDIR = os.path.join(abspath, "..", "tmp")
+PATHOGENSPATH = os.path.join(DATAPATH, "pathogens.csv")
+
+# Parameters for binarization when downloading individual datasets for dotP evaluation
+# Default (first run)
+# PCHEMBL_CUTOFFS = [5, 6, 7, 8, 9]
+# PERCENTAGE_ACTIVITY_CUTOFFS = [50, 75, 90]
+# PERCENTILES = [1, 5, 10, 25, 50]
+# MIN_SIZE_ASSAY_TASK = 499
+# MIN_SIZE_ASSAY_SUBTASK = 99
+# MIN_SIZE_ANY_TASK = 499
+# MAX_NUM_INDEPENDENT_ASSAYS = 10
+# MAX_NUM_ASSAY_SUBTASKS = 3
+# MIN_POSITIVES = 10
+# MAX_NUM_INDEPENDENT_UNITS = 5
+# DATASET_SIZE_LIMIT = 1e6
+# MAX_TASKS_PER_PATHOGEN = 1000
+
+# Parameters to get all the data possible for complete ChEMBL dataset
+PCHEMBL_CUTOFFS = [5]
+PERCENTAGE_ACTIVITY_CUTOFFS = [50]
+PERCENTILES = []
+MIN_SIZE_ASSAY_TASK = 1
+MIN_SIZE_ASSAY_SUBTASK = 1
+MIN_SIZE_ANY_TASK = 1
+MAX_NUM_INDEPENDENT_ASSAYS = 1000
+MAX_NUM_ASSAY_SUBTASKS = 3000
+MIN_POSITIVES = 1
+MAX_NUM_INDEPENDENT_UNITS = 500
+DATASET_SIZE_LIMIT = 1e6
+MAX_TASKS_PER_PATHOGEN = 100000

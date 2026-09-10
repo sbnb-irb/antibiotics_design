@@ -216,3 +216,8 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# Specific files to ignore
+/environment_full_export.yml
+/data/
+/models/

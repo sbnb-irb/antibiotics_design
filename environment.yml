@@ -1,0 +1,52 @@
+name: antibiotic_design
+
+channels:
+  - conda-forge
+  - pytorch
+  - bioconda
+  - defaults
+
+dependencies:
+  - python=3.12
+  - pip
+
+  # Core scientific stack
+  - numpy
+  - pandas
+  - scipy
+  - scikit-learn
+  - matplotlib
+  - seaborn
+  - h5py
+  - pyyaml
+  - tqdm
+
+  # Chemistry / bioinformatics
+  - rdkit
+  - biopython
+  - taxonkit
+
+  # Machine learning
+  - pytorch
+  - transformers
+  - datasets
+  - huggingface_hub
+  - umap-learn
+  - xgboost
+  - optuna
+
+  # Notebooks and visualization
+  - ipykernel
+  - jupyterlab
+  - plotly
+  - streamlit
+
+  - pip:
+      - openai
+      - pubchempy
+      - bacdive
+      - dendropy
+      - phylodm
+      - upsetplot
+      - streamlit-aggrid
+      - smallworld-api
